@@ -38,7 +38,14 @@ public class Calculadora {
 				return -1;
 			}
 		}
-	
+		public float raiz_cuadrada(float operando1)
+		{
+			if(operando1>=1)
+			{
+				return (float) Math.sqrt(operando1);
+			}
+			return -1;
+		}
 		
 		
 
@@ -55,5 +62,6 @@ public class Calculadora {
 		System.out.println("Método resta: "+cal.resta(operando1, operando2));
 		System.out.println("Método multiplicacion: "+cal.multiplicacion(operando1, operando2));
 		System.out.println("Método division: "+cal.division(operando1, operando2));
+		System.out.println("Método raíz cuadrada: "+cal.raiz_cuadrada(operando1));
 	}
 }
