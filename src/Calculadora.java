@@ -19,7 +19,25 @@ public class Calculadora {
 			resultado = operando1 - operando2;
 			return resultado;
 		}
+		public float multiplicacion(float operando1, float operando2)
+		{
+			resultado = operando1 * operando2;
+			return resultado;
+		}
 		
+		public float division(float operando1, float operando2)
+		{
+			if(operando2!=0)
+			{
+				resultado = operando1 / operando2;
+				return resultado;
+			}
+			else 
+			{
+				System.out.println("El segundo operando no puede ser 0");
+				return -1;
+			}
+		}
 	
 		
 		
@@ -35,6 +53,7 @@ public class Calculadora {
 		Calculadora cal = new Calculadora();
 		System.out.println("Método suma: "+cal.suma(operando1, operando2));
 		System.out.println("Método resta: "+cal.resta(operando1, operando2));
-
+		System.out.println("Método multiplicacion: "+cal.multiplicacion(operando1, operando2));
+		System.out.println("Método division: "+cal.division(operando1, operando2));
 	}
 }
